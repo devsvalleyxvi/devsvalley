@@ -1,0 +1,10 @@
+@include media-breakpoint-up(md) {
+  .navbar-dropdown-col-4 {
+    min-width: 35rem;
+  }
+}
+.navbar {
+  .dropdown-item {
+    font-weight: $font-weight-medium;
+  }
+}

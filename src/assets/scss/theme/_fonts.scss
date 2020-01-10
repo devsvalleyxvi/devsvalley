@@ -1,0 +1,21 @@
+// Custom Font
+@font-face {
+  font-family: 'Futura PT';
+  src: url('../fonts/futura-pt/FuturaPT-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/futura-pt/FuturaPT-Light.woff2') format('woff2'),
+  url('../fonts/futura-pt/FuturaPT-Light.ttf') format('truetype'),
+  url('../fonts/futura-pt/FuturaPT-Light.svg#FuturaPT-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura PT';
+  src: url('../fonts/futura-pt/FuturaPT-Book.eot');
+  src: url('../fonts/futura-pt/FuturaPT-Book.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/futura-pt/FuturaPT-Book.woff2') format('woff2'),
+  url('../fonts/futura-pt/FuturaPT-Book.ttf') format('truetype'),
+  url('../fonts/futura-pt/FuturaPT-Book.svg#FuturaPT-Book') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}

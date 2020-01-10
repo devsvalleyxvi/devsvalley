@@ -1,0 +1,64 @@
+.card-showcase{
+    transition:  0.5s ease;
+    border: 0 1px solid rgba(90,122,190,.12)!important;
+    box-shadow:  0 7px 14px 0px  rgba(90,122,190,.13), 0 3px 6px 0 rgba(90,122,190,0.09) ;
+    @include hover-focus{
+        box-shadow: $box-shadow-lg;
+        // transform: scale(1.005);
+        transform: translateY(-5px);
+    }
+    .btn-previw{ 
+        @include media-breakpoint-up(md){
+            opacity: 0;
+        }
+        transition: opacity .3s linear ;
+    } 
+}
+.bg-img{
+    background:  linear-gradient(45deg, #085078 10%, #85d8ce 90%);
+}
+.card-showcase{
+    @include hover-focus{
+        .btn-previw{
+            opacity: 1;   
+         }
+    }
+}
+.cross-text{
+    position: relative;
+    display: inline-block;
+    &:after {
+        content: "";
+        height: 1px;
+        width: 100%;
+        background-color:white;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        
+    }
+}
+.showcase-bundle{
+    margin-top: -100px;
+}
+.mrg-top{
+    margin-top: -3px;
+}
+.text-decoration:hover{
+    
+    text-decoration: none;
+}
+
+.btn-banner{
+    .arrow-right{
+        transition: transform 0.4s ease-in-out;
+    }
+    color: $danger;
+    @include hover-focus{
+        color: $danger !important;
+        .arrow-right {
+            transform: translateX(0.2rem); 
+         }
+    }
+}

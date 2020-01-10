@@ -1,0 +1,29 @@
+@mixin bubble-mixin($name, $translate) {
+    @keyframes #{$name} {
+        0% {
+            transform: translate3d(0, 0, 0) scale(1);
+        }
+        100% {
+            transform: $translate scale(0.2);
+        }
+    }
+}
+
+@include bubble-mixin(bubble1, translate3d(-175px, 250px, 0));
+@include bubble-mixin(bubble2, translate3d(-450px, 150px, 0));
+@include bubble-mixin(bubble3, translate3d(-455px, -100px, 0));
+
+
+[id*="icon-svg-"] {
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#icon-svg-facebook { animation-name: bubble1; }
+#icon-svg-instagram { animation-name: bubble2; }
+#icon-svg-twitter { animation-name: bubble3; }
